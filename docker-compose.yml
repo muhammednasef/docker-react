@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web_build:
+    container_name: web_build
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
